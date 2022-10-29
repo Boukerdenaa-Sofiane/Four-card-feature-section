@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Jomhuria", cursive;
+  font-family: "Poppins", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(229, 6%, 66%);
+}
+/* start header */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 30px;
+}
+
+.container header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.container header h1 {
+  font-size: 34px;
+  font-weight: 200;
+}
+.container header h2 {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+  font-size: 34px;
+  margin-top: 15px;
+}
+.container header p {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+/* end header */
+
+/* Start main */
+main .box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  text-align: right;
+}
+.box1,
+.box2,
+.box3,
+.box4 {
+  background: #fff;
+  border-radius: 7px;
+  padding: 20px;
+  width: 350px;
+}
+.box .box-text {
+  text-align: left;
+  margin-bottom: 60px;
+}
+main h2 {
+  color: hsl(234, 12%, 34%);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+main p {
+  font-size: 17px;
+}
+.box1 {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+.box2 {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+.box3 {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+.box4 {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+.box1,
+.box2 {
+  align-self: center;
+}
+.box .box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  main .box {
+    grid-template-columns: 1fr;
+    margin: 100px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    font-size: 15px;
+  }
+  .container header h1 {
+    font-size: 22px;
+  }
+  .container header h2 {
+    font-size: 22px;
+  }
+  .container header p {
+    line-height: 1.7;
+  }
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    padding: 20px;
+    width: 300px;
+  }
+  .box-text {
+    padding-bottom: 20px;
+  }
+}
+/* End main */
